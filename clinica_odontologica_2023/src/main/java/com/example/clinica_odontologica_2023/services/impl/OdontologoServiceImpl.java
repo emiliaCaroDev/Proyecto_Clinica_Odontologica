@@ -1,13 +1,10 @@
 package com.example.clinica_odontologica_2023.services.impl;
 
 import com.example.clinica_odontologica_2023.dao.IDao;
-import com.example.clinica_odontologica_2023.dao.IOdontologoService;
-import com.example.clinica_odontologica_2023.domain.Odontologo;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.clinica_odontologica_2023.entity.Odontologo;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
-import java.util.Arrays;
 
 @Service
 public class OdontologoServiceImpl{

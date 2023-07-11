@@ -1,15 +1,15 @@
-package com.example.clinica_odontologica_2023.dao;
+package com.example.clinica_odontologica_2023.dao.impl.H2;
 
+import com.example.clinica_odontologica_2023.dao.IDao;
 import com.example.clinica_odontologica_2023.db.BaseDeDatos;
-import com.example.clinica_odontologica_2023.domain.Odontologo;
-import com.example.clinica_odontologica_2023.domain.Paciente;
+import com.example.clinica_odontologica_2023.entity.Odontologo;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 @Component
-public class OdontologoDAOH2 implements IDao<Odontologo>{
+public class OdontologoDAOH2 implements IDao<Odontologo> {
 
     private Connection conn = null;
     private PreparedStatement ps = null;

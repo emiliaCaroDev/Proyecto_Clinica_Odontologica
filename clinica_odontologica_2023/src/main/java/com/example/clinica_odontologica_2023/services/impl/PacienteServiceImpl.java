@@ -2,7 +2,7 @@ package com.example.clinica_odontologica_2023.services.impl;
 
 import com.example.clinica_odontologica_2023.dao.IDao;
 import com.example.clinica_odontologica_2023.dao.IPacienteService;
-import com.example.clinica_odontologica_2023.domain.Paciente;
+import com.example.clinica_odontologica_2023.entity.Paciente;
 import org.springframework.stereotype.Service;
 
 import java.util.*;

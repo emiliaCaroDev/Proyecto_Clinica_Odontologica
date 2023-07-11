@@ -1,11 +1,8 @@
 package com.example.clinica_odontologica_2023.controllers;
 
-import com.example.clinica_odontologica_2023.domain.Odontologo;
-import com.example.clinica_odontologica_2023.domain.Paciente;
+import com.example.clinica_odontologica_2023.entity.Odontologo;
 import com.example.clinica_odontologica_2023.services.impl.OdontologoServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;

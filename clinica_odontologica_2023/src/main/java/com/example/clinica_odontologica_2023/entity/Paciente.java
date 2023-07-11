@@ -1,4 +1,4 @@
-package com.example.clinica_odontologica_2023.domain;
+package com.example.clinica_odontologica_2023.entity;
 
 import java.time.LocalDate;
 
@@ -11,11 +11,11 @@ public class Paciente {
     private String dni;
     private LocalDate fechaIngreso;
     private Domicilio domicilio;
-    private Odontologo odontologo;
+    //private Odontologo odontologo;
 
     public Paciente(){}
 
-    public Paciente(Integer id, String apellido, String nombre, String email, String dni,LocalDate fechaIngreso,Domicilio domicilio,Odontologo odontologo) {
+    public Paciente(Integer id, String apellido, String nombre, String email, String dni,LocalDate fechaIngreso,Domicilio domicilio) { //Odontologo odontologo
         this.id = id;
         this.apellido = apellido;
         this.nombre = nombre;
@@ -23,17 +23,17 @@ public class Paciente {
         this.dni = dni;
         this.fechaIngreso = fechaIngreso;
         this.setDomicilio(domicilio);
-        this.setOdontologo(odontologo);
+        //this.setOdontologo(odontologo);
     }
 
-    public Paciente(String apellido, String nombre, String email, String dni,LocalDate fechaIngreso, Domicilio domicilio,Odontologo odontologo) {
+    public Paciente(String apellido, String nombre, String email, String dni,LocalDate fechaIngreso, Domicilio domicilio) {//Odontologo odontologo
         this.apellido = apellido;
         this.nombre = nombre;
         this.email = email;
         this.dni = dni;
         this.fechaIngreso = fechaIngreso;
         this.setDomicilio(domicilio);
-        this.setOdontologo(odontologo);
+        //this.setOdontologo(odontologo);
     }
 
     //getters y setters
@@ -94,10 +94,7 @@ public class Paciente {
         this.domicilio = domicilio;
     }
 
-    public String toString(){
-        return "\nPaciente { Id = "+id+", Apellido = "+apellido+", Nombre = "+nombre+", Email = "+email+", DNI = "+dni+", Fecha ingreso = "+fechaIngreso+domicilio.toString()+odontologo.toString()+" }";
-    }
-
+    /*
     public Odontologo getOdontologo() {
         return odontologo;
     }
@@ -105,4 +102,12 @@ public class Paciente {
     public void setOdontologo(Odontologo odontologo) {
         this.odontologo = odontologo;
     }
+    */
+
+    public String toString(){
+        return "\nPaciente { Id = "+id+", Apellido = "+apellido+", Nombre = "+nombre+", Email = "+email+", DNI = "+dni+", Fecha ingreso = "+fechaIngreso+domicilio.toString()+" }"; //odontologo.toString()+
+    }
+
+
+
 }

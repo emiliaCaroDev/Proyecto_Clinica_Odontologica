@@ -1,25 +1,27 @@
-package com.example.clinica_odontologica_2023.dao;
+package com.example.clinica_odontologica_2023.dao.impl.H2;
 
+import com.example.clinica_odontologica_2023.dao.IDao;
+import com.example.clinica_odontologica_2023.dao.IPacienteService;
+import com.example.clinica_odontologica_2023.dao.impl.H2.DomicilioDAOH2;
+import com.example.clinica_odontologica_2023.dao.impl.H2.OdontologoDAOH2;
 import com.example.clinica_odontologica_2023.db.BaseDeDatos;
-import com.example.clinica_odontologica_2023.domain.Domicilio;
-import com.example.clinica_odontologica_2023.domain.Odontologo;
-import com.example.clinica_odontologica_2023.domain.Paciente;
+import com.example.clinica_odontologica_2023.entity.Domicilio;
+import com.example.clinica_odontologica_2023.entity.Paciente;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class PacienteDAOH2 implements IDao<Paciente>, IPacienteService{
+public class PacienteDAOH2 implements IDao<Paciente>, IPacienteService {
 
     private static Connection conn = null;
     private static PreparedStatement ps = null;
     private static ResultSet rs = null;
 
     DomicilioDAOH2 domicilioDAOH2 = new DomicilioDAOH2();
-    OdontologoDAOH2 odontologoDAOH2 = new OdontologoDAOH2();
+    //OdontologoDAOH2 odontologoDAOH2 = new OdontologoDAOH2();
 
     @Override
     public Paciente guardar(Paciente paciente) {

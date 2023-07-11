@@ -1,6 +1,6 @@
 package com.example.clinica_odontologica_2023.dao;
 
-import com.example.clinica_odontologica_2023.domain.Odontologo;
+import com.example.clinica_odontologica_2023.entity.Odontologo;
 
 import java.util.*;
 

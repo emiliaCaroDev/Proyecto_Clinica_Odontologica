@@ -1,4 +1,4 @@
-package com.example.clinica_odontologica_2023.domain;
+package com.example.clinica_odontologica_2023.entity;
 
 public class Domicilio {
     private Integer id;

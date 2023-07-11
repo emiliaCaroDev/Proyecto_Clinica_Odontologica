@@ -1,8 +1,7 @@
-package com.example.clinica_odontologica_2023.domain;
-
-import org.springframework.cglib.core.Local;
+package com.example.clinica_odontologica_2023.entity;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Turno {
     private Integer id;
@@ -60,6 +59,6 @@ public class Turno {
     }
 
     public String toString(){
-        return "\nTurno { Id = ";
+        return "\nTurno { Id = "+id+paciente+odontologo+", Fecha y hora = "+fechaHora+" }";
     }
 }
